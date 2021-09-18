@@ -20,8 +20,6 @@
     ├── src                             # Source files
     │   └─ design-token
     │       └─ scss-variables.scss      # scss-global-variables
-    ├── test                            # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                           # Tools and utilities
     ├── .babelrc                        # babel config
     ├── .webpack                        # webpack config
     ├── tsconfig                        # typescript configuration file
