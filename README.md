@@ -1,9 +1,9 @@
 <h2 align="middle">React-Typescript-SCSS-Boilerplate</h2>
 <p align="middle">serve with babel, webpack</p>
 <p align="middle">
-  <img src="https://img.shields.io/badge/version-1.0.1-blue?style=flat-square" alt="template version"/>
+  <img src="https://img.shields.io/badge/version-1.0.2-red?style=flat-square" alt="template version"/>
   <img src="https://img.shields.io/badge/library-React-skyblue.svg?style=flat-square"/>
-  <img src="https://img.shields.io/badge/language-scss-pink.svg?style=flat-square"/>
+  <img src="https://img.shields.io/badge/preprocessor-scss-pink.svg?style=flat-square"/>
   <img src="https://img.shields.io/badge/language-typescript-blue.svg?style=flat-square"/>
   <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"/>
 </p>
