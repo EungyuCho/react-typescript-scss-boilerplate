@@ -1,0 +1,75 @@
+
+$colors: 
+    "red" 8,
+    "orange" 19,
+    "amber" 33,
+    "lime" 103,
+    "green" 156,
+    "teal" 185,
+    "blue" 214,
+    "purple" 258,
+    "pink" 319;
+
+$lights: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
+
+body {
+    background-color: var(--bg-color);
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+
+    .palette-container {
+        display: flex;
+        flex-direction: column;
+
+
+        @each $name, $hue in $colors {
+            @each $light in $lights {
+              .#{$name}#{$light} {
+                  background-color: hsla(var(--palette-#{$name}-#{$light}), 100%);
+              }
+            }
+
+            .font-#{$name} {
+                transition: all .35s;
+                &::after {
+                    content: "background-color: hsla(var(--palette-#{$name}-(lightPercent)), 100%);";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: hsla(var(--palette-#{$name}-90), 100%);
+                    opacity: 0%;
+                }
+            }
+        }
+
+        &:hover {
+            .palette-description::after {
+                opacity: 100%;
+            }
+        }
+
+        div {
+            padding: 1em;
+            
+        }
+        
+
+        .palette-description {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .code {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    }
+}
+
+.font-white {
+    color: white;
+}
